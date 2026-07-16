@@ -8,7 +8,7 @@ use App\Models\User;
 
 Route::get('/signup', function () {
     return view('pages.createuser');
-});
+})->name('signup');
 
 Route::post('/users',[UserController::class,'store'])->name('users.store');
 

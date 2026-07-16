@@ -19,6 +19,6 @@ class UserController extends Controller
     // Magpadala ng verification email
     $user->sendEmailVerificationNotification();
 
-    return view('pages.createuser');
+    return redirect()->route('signup');
     }
 }
